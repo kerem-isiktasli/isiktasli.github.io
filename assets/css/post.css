@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Arka plan rengi beyaz ve biraz açık tonlu */
+    color: #333; /* Metin rengi */
+}
+
+header {
+    background-color: #fff; /* Header arka plan rengi beyaz */
+    color: #333; /* Başlık metin rengi */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+}
+
+nav {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff; /* Menü arka plan rengi beyaz */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+    position: relative;
+    z-index: 999; /* Menünün diğer öğelerin üzerine çıkması için */
+}
+
+nav a {
+    color: #333; /* Menü metin rengi */
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+}
+
+nav a:hover {
+    background-color: #f3f3f3; /* Menü üzerine gelindiğinde arka plan rengi biraz daha açık tonlu beyaz */
+}
+
+.back-to-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #333; /* Geri dönme bağlantısı metin rengi */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff; /* Geri dönme bağlantısı arka plan rengi beyaz */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+}
+
+.back-to-home:hover {
+    background-color: #f3f3f3; /* Geri dönme bağlantısı üzerine gelindiğinde arka plan rengi biraz daha açık tonlu beyaz */
+}
+
+main {
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 30px;
+    display: none;
+    animation: fadeIn 1s ease;
+    background-color: #fff; /* Kategori arka plan rengi beyaz */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.category h2 {
+    margin-bottom: 10px;
+    color: #333; /* Kategori başlık metin rengi */
+}
+
+.post {
+    background-color: #fff; /* Blog gönderisi arka plan rengi beyaz */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+}
+.post1 {
+    background-color: #fff; /* Blog gönderisi arka plan rengi beyaz */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+}
+
+
+.post h3 {
+    color: #333; /* Blog gönderisi başlık metin rengi */
+}
+
+.post p {
+    color: #666; /* Blog gönderisi metin rengi */
+}
+
+.post img {
+    max-width: 100%;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+}
+
+footer {
+    background-color: #fff; /* Footer arka plan rengi beyaz */
+    color: #333; /* Footer metin rengi */
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff; /* Yukarı çık bağlantısı arka plan rengi beyaz */
+    color: #333; /* Yukarı çık bağlantısı metin rengi */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+}f
+
+.back-to-top:hover {
+    background-color: #f3f3f3; /* Yukarı çık bağlantısı üzerine gelindiğinde arka plan rengi biraz daha açık tonlu beyaz */
+}

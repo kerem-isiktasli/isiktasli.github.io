@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Arka plan rengi siyah yapıldı */
+    color: #fff; /* Yazı rengi beyaz yapıldı */
+    position: relative; /* Sayfa konumlandırması için gerekli */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.video {
+    width: 560px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+p {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Eve Dön linkinin stilleri */
+.home-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #333;
+    z-index: 9999;
+    transition: background-color 0.3s; /* Renk değişimi için geçiş efekti eklendi */
+}
+
+/* Eve Dön linki hover durumunda */
+.home-link:hover {
+    background-color: #555; /* Hover durumunda arka plan rengi değiştirildi */
+}
+
+/* Videolar kısmının stilleri */
+.video-description {
+    background-color: #686868; /* Arka plan rengi beyaz yapıldı */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Gölgelendirme eklendi */
+}

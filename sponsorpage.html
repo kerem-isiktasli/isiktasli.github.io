@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/img/ışıktaşlı.png">
+  <title>Donate Page</title>
+  <link rel="stylesheet" href="assets/css/sponsors.css">
+  <style>
+    .dropdown-content {
+      display: none;
+    }
+    .progress-bar {
+      width: 0%;
+      height: 20px; /* İhtiyaca göre yüksekliği ayarlayabilirsiniz */
+      background-color: green; /* İhtiyaca göre arka plan rengini ayarlayabilirsiniz */
+    }
+  </style>
+  <a href="index.html" class="back-to-home mobile-back-to-home">← Home</a>
+</head>
+<body>
+  <div class="container">
+    <h1>Support Me!</h1>
+    <div class="progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
+    <div class="options">
+      <button onclick="showDropdown('btn50')">50 TL</button>
+      <div id="dropdown50" class="dropdown-content">
+        <select id="bankSelection50">
+          <option value="papara">Papara</option>
+          <option value="isbank">İş Bankası</option>
+        </select>
+        <button onclick="donate(50, document.getElementById('bankSelection50').value)">Donate</button>
+      </div>
+      
+      <button onclick="showDropdown('btn100')">100 TL</button>
+      <div id="dropdown100" class="dropdown-content">
+        <select id="bankSelection100">
+          <option value="papara">Papara</option>
+          <option value="isbank">İş Bankası</option>
+        </select>
+        <button onclick="donate(100, document.getElementById('bankSelection100').value)">Donate</button>
+      </div>
+
+      <button onclick="showDropdown('btn200')">200 TL</button>
+      <div id="dropdown200" class="dropdown-content">
+        <select id="bankSelection200">
+          <option value="papara">Papara</option>
+          <option value="isbank">İş Bankası</option>
+        </select>
+        <button onclick="donate(200, document.getElementById('bankSelection200').value)">Donate</button>
+      </div>
+      <button onclick="showDropdown('btn500')">500 TL</button>
+      <div id="dropdown500" class="dropdown-content">
+        <select id="bankSelection500">
+          <option value="papara">Papara</option>
+          <option value="isbank">İş Bankası</option>
+        </select>
+        <button onclick="donate(500, document.getElementById('bankSelection500').value)">Donate</button>
+      </div>
+      <button onclick="showDropdown('btn1000')">1000 TL</button>
+      <div id="dropdown1000" class="dropdown-content">
+        <select id="bankSelection1000">
+          <option value="papara">Papara</option>
+          <option value="isbank">İş Bankası</option>
+        </select>
+        <button onclick="donate(1000, document.getElementById('bankSelection1000').value)">Donate</button>
+      </div>
+      <button onclick="showDropdown('btn2000')">2000 TL</button>
+      <div id="dropdown2000" class="dropdown-content">
+        <select id="bankSelection2000">
+          <option value="papara">Papara</option>
+          <option value="isbank">İş Bankası</option>
+        </select>
+        <button onclick="donate(2000, document.getElementById('bankSelection2000').value)">Donate</button>
+      </div>
+      <button onclick="showDropdown('btn5000')">5000 TL</button>
+      <div id="dropdown5000" class="dropdown-content">
+        <select id="bankSelection5000">
+          <option value="papara">Papara</option>
+          <option value="isbank">İş Bankası</option>
+        </select>
+        <button onclick="donate(5000, document.getElementById('bankSelection5000').value)">Donate</button>
+      </div>
+    </div>
+    <div class="qr-code" id="qrCode"></div>
+    <div class="message" id="thankYouMessage"></div>
+    <div class="recent-donations" id="recentDonations">
+      <h3>Recent supports</h3>
+        <a>"supports checking and manuel deploy at midnight.Fake support won't appear when reload the page."</a>
+          <p class="home__title-color"> -Türkiye İş Bankası, ₺50. </br> </p>
+          <p class="home__title-color"> -Mehmet Devrekoğlu, ₺50. </br> </p> 
+          <p class="home__title-color"> -Mustafa Eren Işıktaşlı, ₺50. </p>
+          
+      <ul id="donationList"></ul>
+    </div>
+    <h3>Which components that I need?</h3>
+                <p>
+                  ------------------------------------------------ 
+                </p>
+                   
+                <p>
+                  1 x Mamba f405 wing flight control  card : $190. </br>
+                  5 x Brusheless 1400kv motor : $78.</br>
+                  5 x 30A ESC : $78.</br>
+                  1 X Radio : $480.</br>
+                  1 X Receiver with 10 channel : $20.</br>
+                  1 X Carbon Fiber Plane Frame : $800.</br>
+                  1 X Lipo battery 5000mah 4s 40c : $50.</br>
+                  1 X RF900 Telemetry : $1314.</br>
+                  1 X Gps module : $21.</br> </br>
+                  That's why I need Supporters.
+                  </p>
+                
+    
+    <div class="sponsor-section">
+      <h3>Sponsor section</h3>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">        
+        <input type="hidden" name="access_key" value="9946c605-7515-4dc2-9765-cfa36009562b">
+        <input type="text" name="name" class="contact__input" placeholder="name" required>
+        <input type="email" name="email" class="contact__input" placeholder="e-mail" required>
+        <textarea name="message" class="contact__input" placeholder="Message" required></textarea>
+
+        <select id="bankSelection">
+          <option value="papara">Papara</option>
+          <option value="isbank">İş Bankası</option>
+        </select>
+        <input type="file" id="sponsorProof" accept=".pdf" placeholder="Upload Proof">
+        <button class="contact__input" type="submit">Become a Sponsor</button>
+        <a>The sponsor corner is for companies, foundations or individuals with support of 5000 TL or more. Put the photo you want to appear in the corner in the pdf section at 1:1 scale.</a>
+      </form>
+      <H4>IBANS to manuel support </H4>
+      <p>PAPARA --> TR60 0082 9000 0949 1279 4746 62 </br>
+      İŞ BANK --> TR94 0006 4000 0011 2910 6094 17</p>
+      <div class="sponsor-section">
+        <h2 class="middle">Sponsors</h2>
+        <section class="work section" id="work">
+          <div class="sponsor-logos"><div class="work__container bd-grid">
+            
+              <img class="sponsor-logo1 work__img" src="assets/img/supporters/alfa_pnömatik.webp" alt="Sponsor 1">
+              <img class="sponsor-logo1 work__img" src="assets/img/supporters/ezine_belediyesi.webp" alt="Sponsor 2">
+              <img class="sponsor-logo1 work__img" src="assets/img/supporters/pinkim.webp" alt="Sponsor3 ">
+            
+            
+            <!-- Diğer sponsor logolarını buraya ekleyebilirsiniz -->
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="assets/js/sponsors.js"></script>
+  <script>
+    function showDropdown(buttonId) {
+      const dropdownId = "dropdown" + buttonId.slice(3);
+      const dropdown = document.getElementById(dropdownId);
+      const dropdowns = document.getElementsByClassName("dropdown-content");
+      for (let i = 0; i < dropdowns.length; i++) {
+        if (dropdowns[i] !== dropdown) {
+          dropdowns[i].style.display = "none";
+        }
+      }
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      } else {
+        dropdown.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>

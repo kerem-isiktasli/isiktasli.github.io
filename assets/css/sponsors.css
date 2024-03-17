@@ -1,0 +1,206 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .progress {
+    height: 20px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    border-radius: 5px;
+  }
+  
+  .options {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .options button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .options button:hover {
+    background-color: #45a049;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .dropdown-content button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #45a049;
+  }
+  
+  .dropdown-content select, .dropdown-content button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content select:focus, .dropdown-content button:focus {
+    outline: none;
+  }
+  
+  .dropdown-content select:hover, .dropdown-content button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .qr-code {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50;
+  }
+  
+  .recent-donations {
+    margin-bottom: 20px;
+  }
+  
+  .recent-donations h3 {
+    color: #333;
+  }
+  
+  .recent-donations ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-donations li {
+    margin-bottom: 5px;
+  }
+  
+  .sponsor-section {
+    margin-bottom: 20px;
+  }
+  
+  .sponsor-section h3 {
+    color: #333;
+  }
+  
+  .sponsor-section form input,
+  .sponsor-section form select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .sponsor-section form input[type="file"] {
+    padding: 5px;
+  }
+  
+  .sponsor-section form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sponsor-section form button:hover {
+    background-color: #45a049;
+  }
+  .home__title-color {
+    color: var(--first-color);
+  }
+  .back-to-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #333; /* Geri dönme bağlantısı metin rengi */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff; /* Geri dönme bağlantısı arka plan rengi beyaz */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+  }
+
+  .back-to-home:hover {
+    background-color: #f3f3f3; /* Geri dönme bağlantısı üzerine gelindiğinde arka plan rengi biraz daha açık tonlu beyaz */
+  }
+  .mobile-back-to-home {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  .middle{
+    text-align: center;
+    align-items: center;
+  }
+  .sponsor-logo1 {
+    width: 200px; /* İstediğiniz boyuta ayarlayabilirsiniz */
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Gölgelendirme */
+    margin: 20px; /* Boşluk */
+    padding: 10px; /* Boşluk */
+  }
+  .supports_text{
+    color: #8d1717;
+
+  }
+  
+  
